@@ -1,13 +1,185 @@
+@import url("https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&family=Plus+Jakarta+Sans&display=swap");
 * {
   margin: 0;
   padding: 0;
   border: 0;
 }
 
+:root {
+  --primary: rgb(9, 154, 202);
+}
+
 html,
 body {
-  font: system-ui;
+  font: calc(13px + 0.2vh + 0.1vw) "Plus Jakarta Sans", sans-serif;
   background: #fefeff;
   color: #222324;
+}
+
+h1 {
+  font-size: 2.4rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+button {
+  font: inherit;
+  color: inherit;
+  background: #0000;
+}
+
+button i {
+  font-size: 1.7rem;
+}
+
+input {
+  font: inherit;
+  color: inherit;
+  background: #0000;
+}
+
+.con {
+  width: 100vw;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.con .pages {
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.first-page.pages {
+  background: var(--primary);
+  color: #fff;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  line-height: 1.2rem;
+  text-align: right;
+}
+
+.first-page.pages .header {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.first-page.pages .sub-header {
+  font-size: 0.9rem;
+}
+
+.first-page.pages .text.on {
+  -webkit-transform: translate(0, -40vh);
+          transform: translate(0, -40vh);
+}
+
+.first-page.pages .bottom {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 44;
+  width: 100%;
+  padding: 22px 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.first-page.pages .skip {
+  color: #fefeff9b;
+  margin-left: auto;
+}
+
+.first-page.pages .next {
+  margin-left: auto;
+  background: #fff;
+  border-radius: 50%;
+  padding: 22px;
+}
+
+.first-page.pages .next .icon {
+  -webkit-transform: translate(-4px, 0);
+          transform: translate(-4px, 0);
+}
+
+.first-page.pages .next .icon > div {
+  width: calc(18px + 0.2vh + 0.1vw);
+  height: calc(18px + 0.2vh + 0.1vw);
+  border-right: 4px solid var(--primary);
+  border-bottom: 4px solid var(--primary);
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.first-page.pages .bottom.on .skip {
+  color: var(--primary);
+}
+
+.first-page.pages .bottom.on .next {
+  background: var(--primary);
+}
+
+.first-page.pages .bottom.on .next .icon > div {
+  border-right: 4px solid #fff;
+  border-bottom: 4px solid #fff;
+}
+
+.first-page.pages .con-of-sign {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  padding: 22px 32px;
+  height: 80vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #fefeff;
+  color: var(--primary);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+@media screen and (prefers-color-scheme: dark) {
+  html,
+  body {
+    background: #323233;
+    color: #fff;
+  }
+  .pages {
+    background: #323233;
+  }
 }
 /*# sourceMappingURL=main.css.map */
